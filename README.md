@@ -1,4 +1,17 @@
-# Disaster Response Pipeline Project
+# Disaster Response Pipeline Project:
+ This project is to build a multi classifier model for an API that classifies disaster messages via a Web Page.
+
+## Project Files: 
+1. app folder
+	- run.py - read the data from database and prepare graph configuration to display in the web page
+    - templates folder - HTML files for the display
+2. data folder
+	- disaster_categories.csv & disaster_messages.csv - raw data files for the disaster messages & response used to train the model
+	- DisasterResponse.db - sqllite database to store the process data
+    - process_data.py - perform the ETL pipeline to process the data from raw data files and stored into database
+3. models folder
+	- train_classifier.py - read the data from database and perform Machine Learning pipeline to build the model
+    - classifier.pkl - stored the trained model
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.

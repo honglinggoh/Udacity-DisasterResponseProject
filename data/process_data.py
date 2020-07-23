@@ -88,9 +88,6 @@ def save_data_db(df, sqldb_filepath, table_name):
     OUTPUT
         Saves the database
     '''
-    #sqldb_filepath = 'sqllite:///' + sqldb_filepath
-    #print(sqldb_filepath)
-    #engine = create_engine(sqldb_filepath)
     engine = create_engine('sqlite:///{}'.format(sqldb_filepath)) 
     
     with engine.connect() as connection:
